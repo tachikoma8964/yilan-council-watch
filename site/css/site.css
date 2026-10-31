@@ -235,3 +235,12 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* 財產申報 */
+.facts { margin-top: var(--s3); }
+.facts > div { padding: var(--s3) 0; border-bottom: var(--rule) solid var(--line); }
+.facts dt { color: var(--muted); font-size: var(--text-s); }
+.facts dd { margin: 0; font-size: var(--text-l); font-weight: 700; }
+.facts.small dd { font-size: var(--text-m); font-weight: 400; }
+.full { margin-top: var(--s3); }
+.full summary { display: flex; align-items: center; min-height: var(--target); cursor: pointer; font-weight: 700; }

@@ -1,0 +1,904 @@
+{
+ "source": "https://priso.cy.gov.tw/layout/baselist",
+ "members": {
+  "A2004": {
+   "name": "張勝德",
+   "period": 226,
+   "pages": [
+    268,
+    268
+   ],
+   "declaredOn": "2023-03-16",
+   "kind": null,
+   "land": {
+    "self": 16,
+    "family": 2
+   },
+   "building": {
+    "self": 2,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 2
+   },
+   "cash": 1259500,
+   "deposit": 82633123,
+   "stock": 118000,
+   "bond": 0,
+   "fund": 150000,
+   "debt": 0,
+   "business": 125907120
+  },
+  "A2017": {
+   "name": "陳漢鍾",
+   "period": 310,
+   "pages": [
+    226,
+    226
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 7,
+    "family": 0
+   },
+   "building": {
+    "self": 3,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 3,
+    "family": 0
+   },
+   "cash": 3500000,
+   "deposit": 1768428,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 8932044,
+   "business": 1600000
+  },
+  "A2011": {
+   "name": "吳宏謀",
+   "period": 310,
+   "pages": [
+    231,
+    231
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 15,
+    "family": 0
+   },
+   "building": {
+    "self": 4,
+    "family": 2
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 6603888,
+   "stock": 36370,
+   "bond": 0,
+   "fund": 0,
+   "debt": 11100000,
+   "business": 0
+  },
+  "A2020": {
+   "name": "呂惠卿",
+   "period": 310,
+   "pages": [
+    236,
+    236
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 1,
+    "family": 1
+   },
+   "building": {
+    "self": 3,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 4307707,
+   "stock": 624780,
+   "bond": 0,
+   "fund": 0,
+   "debt": 0,
+   "business": 0
+  },
+  "A2023": {
+   "name": "沈信雄",
+   "period": 310,
+   "pages": [
+    261,
+    261
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 5,
+    "family": 63
+   },
+   "building": {
+    "self": 4,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 3217247,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 1792007,
+   "business": 3000
+  },
+  "A2024": {
+   "name": "林佩螢",
+   "period": 310,
+   "pages": [
+    268,
+    268
+   ],
+   "declaredOn": "2025-12-29",
+   "kind": "定期申報",
+   "land": {
+    "self": 0,
+    "family": 0
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 33904,
+   "stock": 0,
+   "bond": 0,
+   "fund": 34653,
+   "debt": 588616,
+   "business": 0
+  },
+  "A2001": {
+   "name": "林岳賢",
+   "period": 310,
+   "pages": [
+    272,
+    272
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 7,
+    "family": 11
+   },
+   "building": {
+    "self": 4,
+    "family": 3
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 2
+   },
+   "cash": 0,
+   "deposit": 20534708,
+   "stock": 1727250,
+   "bond": 0,
+   "fund": 0,
+   "debt": 16860529,
+   "business": 3005000
+  },
+  "A2022": {
+   "name": "林義剛",
+   "period": 310,
+   "pages": [
+    282,
+    282
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 0,
+    "family": 8
+   },
+   "building": {
+    "self": 0,
+    "family": 5
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 618349,
+   "stock": 3523530,
+   "bond": 0,
+   "fund": 0,
+   "debt": 6361676,
+   "business": 0
+  },
+  "A2008": {
+   "name": "林詩穎",
+   "period": 310,
+   "pages": [
+    287,
+    287
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 2,
+    "family": 0
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 373118,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 0,
+   "business": 0
+  },
+  "A2003": {
+   "name": "林錫明",
+   "period": 310,
+   "pages": [
+    291,
+    291
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 8,
+    "family": 3
+   },
+   "building": {
+    "self": 1,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 8554821,
+   "stock": 57150,
+   "bond": 0,
+   "fund": 0,
+   "debt": 3072509,
+   "business": 12013000
+  },
+  "A2010": {
+   "name": "林聰池",
+   "period": 310,
+   "pages": [
+    296,
+    296
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 6,
+    "family": 8
+   },
+   "building": {
+    "self": 5,
+    "family": 5
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 2
+   },
+   "cash": 0,
+   "deposit": 3806642,
+   "stock": 1100910,
+   "bond": 0,
+   "fund": 0,
+   "debt": 19050000,
+   "business": 16000000
+  },
+  "A2005": {
+   "name": "林麗",
+   "period": 310,
+   "pages": [
+    301,
+    301
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 7,
+    "family": 3
+   },
+   "building": {
+    "self": 5,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 15220217,
+   "stock": 1002730,
+   "bond": 0,
+   "fund": 1048541,
+   "debt": 3550165,
+   "business": 3000
+  },
+  "A2028": {
+   "name": "陳文昌",
+   "period": 310,
+   "pages": [
+    321,
+    321
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 0,
+    "family": 9
+   },
+   "building": {
+    "self": 0,
+    "family": 3
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 783684,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 24900000,
+   "business": 1785714
+  },
+  "A2031": {
+   "name": "陳玉萍",
+   "period": 310,
+   "pages": [
+    325,
+    325
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 8,
+    "family": 55
+   },
+   "building": {
+    "self": 5,
+    "family": 21
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 3
+   },
+   "cash": 0,
+   "deposit": 9866884,
+   "stock": 32650,
+   "bond": 0,
+   "fund": 0,
+   "debt": 131832316,
+   "business": 101107000
+  },
+  "A2015": {
+   "name": "陳福山",
+   "period": 310,
+   "pages": [
+    334,
+    334
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 4,
+    "family": 2
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 128224,
+   "stock": 1790,
+   "bond": 0,
+   "fund": 0,
+   "debt": 11961403,
+   "business": 0
+  },
+  "A2019": {
+   "name": "陳鴻禧",
+   "period": 310,
+   "pages": [
+    338,
+    338
+   ],
+   "declaredOn": "2025-12-16",
+   "kind": "定期申報",
+   "land": {
+    "self": 30,
+    "family": 2
+   },
+   "building": {
+    "self": 3,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 871331,
+   "stock": 636970,
+   "bond": 0,
+   "fund": 0,
+   "debt": 2000000,
+   "business": 0
+  },
+  "A2002": {
+   "name": "黃定和",
+   "period": 310,
+   "pages": [
+    344,
+    344
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 3,
+    "family": 7
+   },
+   "building": {
+    "self": 4,
+    "family": 11
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 20563814,
+   "stock": 174680,
+   "bond": 0,
+   "fund": 1564800,
+   "debt": 10986452,
+   "business": 33000
+  },
+  "A2014": {
+   "name": "黃建勇",
+   "period": 310,
+   "pages": [
+    352,
+    352
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 18,
+    "family": 4
+   },
+   "building": {
+    "self": 2,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 3747920,
+   "stock": 1642620,
+   "bond": 0,
+   "fund": 0,
+   "debt": 71200000,
+   "business": 20909000
+  },
+  "A2013": {
+   "name": "黃浴沂",
+   "period": 310,
+   "pages": [
+    362,
+    362
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 40,
+    "family": 0
+   },
+   "building": {
+    "self": 7,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 8701844,
+   "stock": 31359090,
+   "bond": 0,
+   "fund": 0,
+   "debt": 46324060,
+   "business": 22000000
+  },
+  "A2036": {
+   "name": "黃惠慈",
+   "period": 310,
+   "pages": [
+    370,
+    370
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 3,
+    "family": 0
+   },
+   "building": {
+    "self": 2,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 998682,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 4230601,
+   "business": 0
+  },
+  "A2018": {
+   "name": "黃琤婷",
+   "period": 310,
+   "pages": [
+    374,
+    374
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 0,
+    "family": 0
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 848457,
+   "stock": 0,
+   "bond": 0,
+   "fund": 7561,
+   "debt": 0,
+   "business": 0
+  },
+  "A2035": {
+   "name": "黃雯如",
+   "period": 310,
+   "pages": [
+    378,
+    378
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 1,
+    "family": 15
+   },
+   "building": {
+    "self": 6,
+    "family": 2
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 36102399,
+   "stock": 2286840,
+   "bond": 0,
+   "fund": 0,
+   "debt": 10000000,
+   "business": 558000
+  },
+  "A2034": {
+   "name": "游吉祥",
+   "period": 310,
+   "pages": [
+    384,
+    384
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 27,
+    "family": 9
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 2
+   },
+   "cash": 0,
+   "deposit": 2020745,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 120000,
+   "business": 2000
+  },
+  "A2025": {
+   "name": "楊弘旻",
+   "period": 310,
+   "pages": [
+    390,
+    390
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 5,
+    "family": 3
+   },
+   "building": {
+    "self": 1,
+    "family": 2
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 1430262,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 9227246,
+   "business": 0
+  },
+  "A2006": {
+   "name": "楊順木",
+   "period": 310,
+   "pages": [
+    395,
+    395
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 0,
+    "family": 3
+   },
+   "building": {
+    "self": 0,
+    "family": 3
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 12503248,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 25722183,
+   "business": 3000
+  },
+  "A2009": {
+   "name": "賴良洲",
+   "period": 310,
+   "pages": [
+    400,
+    400
+   ],
+   "declaredOn": "2025-12-15",
+   "kind": "定期申報",
+   "land": {
+    "self": 9,
+    "family": 11
+   },
+   "building": {
+    "self": 2,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 2,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 5302594,
+   "stock": 940330,
+   "bond": 293130,
+   "fund": 866450,
+   "debt": 0,
+   "business": 0
+  },
+  "A2029": {
+   "name": "謝正信",
+   "period": 310,
+   "pages": [
+    406,
+    406
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 5,
+    "family": 5
+   },
+   "building": {
+    "self": 1,
+    "family": 1
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 2
+   },
+   "cash": 0,
+   "deposit": 596723,
+   "stock": 0,
+   "bond": 0,
+   "fund": 1374752,
+   "debt": 4100811,
+   "business": 0
+  },
+  "A2026": {
+   "name": "謝燦輝",
+   "period": 310,
+   "pages": [
+    411,
+    411
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 9,
+    "family": 2
+   },
+   "building": {
+    "self": 2,
+    "family": 2
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 6908352,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 0,
+   "business": 0
+  },
+  "A2021": {
+   "name": "簡松樹",
+   "period": 310,
+   "pages": [
+    417,
+    417
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 3,
+    "family": 0
+   },
+   "building": {
+    "self": 0,
+    "family": 0
+   },
+   "vehicle": {
+    "self": 0,
+    "family": 0
+   },
+   "cash": 0,
+   "deposit": 0,
+   "stock": 0,
+   "bond": 0,
+   "fund": 0,
+   "debt": 5164503,
+   "business": 0
+  },
+  "A2027": {
+   "name": "邱素梅",
+   "period": 318,
+   "pages": [
+    88,
+    88
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 1,
+    "family": 21
+   },
+   "building": {
+    "self": 1,
+    "family": 2
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 1
+   },
+   "cash": 0,
+   "deposit": 4929265,
+   "stock": 2109970,
+   "bond": 0,
+   "fund": 0,
+   "debt": 2623396,
+   "business": 6000000
+  },
+  "A2016": {
+   "name": "謝家倫",
+   "period": 318,
+   "pages": [
+    110,
+    110
+   ],
+   "declaredOn": "2025-11-01",
+   "kind": "定期申報",
+   "land": {
+    "self": 3,
+    "family": 5
+   },
+   "building": {
+    "self": 5,
+    "family": 3
+   },
+   "vehicle": {
+    "self": 1,
+    "family": 2
+   },
+   "cash": 0,
+   "deposit": 2301120,
+   "stock": 373000,
+   "bond": 0,
+   "fund": 0,
+   "debt": 6016721,
+   "business": 0
+  }
+ }
+}

@@ -64,6 +64,37 @@
   function head(title, lede, mark) {
     return h("div", { class: "head" }, h("h1", { id: "page-title", tabindex: "-1" }, title, mark ? h("span", { class: "mark" }, mark) : null), lede ? h("p", { class: "lede" }, lede) : null);
   }
+  function yuan(n) {
+    if (n >= 100000000) return "約 " + (Math.round(n / 1000000) / 100).toLocaleString("zh-TW") + " 億元";
+    if (n >= 10000) return "約 " + Math.round(n / 10000).toLocaleString("zh-TW") + " 萬元";
+    return n.toLocaleString("zh-TW") + " 元";
+  }
+  function assetsBlock(m) {
+    var a = m.assets;
+    if (!a) return h("div", { class: "block" }, sect("財產申報", 2), h("p", { class: "sub" }, "尚未整理。請到", h("a", { href: data.assetSource, rel: "noopener", target: "_blank" }, "監察院財產申報查詢"), "搜尋姓名。"));
+    var land = a.land.self + a.land.family, building = a.building.self + a.building.family;
+    var row = function (label, value) { return h("div", null, h("dt", null, label), h("dd", null, value)); };
+    var page = a.pages ? "，第 " + a.pages[0] + (a.pages[1] !== a.pages[0] ? "–" + a.pages[1] : "") + " 頁" : "";
+    return h("div", { class: "block" }, sect("財產申報", 2),
+      h("p", { class: "sub" }, a.declaredOn + " 申報，含配偶及未成年子女。廉政專刊第 " + a.period + " 期" + page + "。"),
+      h("dl", { class: "facts" },
+        row("土地、建物", "土地 " + land + " 筆、建物 " + building + " 筆"),
+        row("股票（票面價額，不是市價）", a.stock ? yuan(a.stock) : "沒有申報"),
+        row("現金", a.cash ? yuan(a.cash) : "沒有申報"),
+        row("存款", a.deposit ? yuan(a.deposit) : "沒有申報")),
+      h("details", { class: "full" }, h("summary", null, "看更多"),
+        h("dl", { class: "facts small" },
+          row("土地", "本人 " + a.land.self + " 筆，配偶及未成年子女 " + a.land.family + " 筆"),
+          row("建物", "本人 " + a.building.self + " 筆，配偶及未成年子女 " + a.building.family + " 筆"),
+          row("汽車", "本人 " + a.vehicle.self + " 輛，配偶及未成年子女 " + a.vehicle.family + " 輛"),
+          row("現金", a.cash.toLocaleString("zh-TW") + " 元"),
+          row("存款", a.deposit.toLocaleString("zh-TW") + " 元"),
+          row("股票票面價額", a.stock.toLocaleString("zh-TW") + " 元"),
+          a.bond || a.fund ? row("債券、基金", (a.bond + a.fund).toLocaleString("zh-TW") + " 元") : null,
+          row("事業投資", a.business.toLocaleString("zh-TW") + " 元"),
+          row("債務", a.debt.toLocaleString("zh-TW") + " 元")),
+        h("p", { class: "sub" }, "完整申報書：", h("a", { href: data.assetSource, rel: "noopener", target: "_blank" }, "監察院財產申報查詢"), "，搜尋姓名，下載廉政專刊第 " + a.period + " 期的一般申報。")));
+  }
   function billsOfMember(name) { return data.bills.filter(function (b) { return b.by.indexOf(name) >= 0; }); }
 
   /* ---- views ---- */
@@ -127,6 +158,7 @@
         h("div", null,
           m.party ? h("p", null, partyChip(m)) : null,
           h("p", null, "第 " + data.term + " 屆提案 " + m.proposed + " 件，連署 " + m.cosigned + " 件。"))),
+      assetsBlock(m),
       h("div", { class: "block" }, sect("提案類別", 2),
         cats.length ? h("ul", { class: "bars" }, cats.map(function (c) {
           var li = h("li", null, h("span", null, c[0]), h("b", null, c[1] + " 件"), h("span", { class: "track", "aria-hidden": "true" }, h("span", { class: "fill" })));
@@ -201,6 +233,7 @@
           h("li", null, "選區範圍：維基百科「宜蘭縣議會」，各選區席次與官網名單相符，尚待與中央選舉委員會公告核對。"),
           h("li", null, "議員照片：", h("a", { href: "https://bulletin.cec.gov.tw/", rel: "noopener" }, data.photoCredit), "。是 111 年參選時刊登的照片。"),
           h("li", null, "黃雯如 2024 年補選才就任，不在 111 年公報裡，照片取自", h("a", { href: "https://www.ilcc.gov.tw/Html/H_05/H_05.asp", rel: "noopener" }, "議會官網"), "。"),
+          h("li", null, "財產申報：", h("a", { href: data.assetSource, rel: "noopener" }, "監察院公職人員財產申報查詢"), "，取每位議員最新一份一般申報。股票欄是票面價額，不是股價；金額含配偶與未成年子女。"),
           h("li", null, "資料擷取日：" + data.retrieved + "。")),
         h("h2", null, "目前沒有的"),
         h("ul", null,
