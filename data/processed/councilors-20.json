@@ -1,0 +1,271 @@
+{
+  "term": 20,
+  "retrieved": "2026-10-29",
+  "sourcePage": "https://www.ilcc.gov.tw/Html/H_05/H_05.asp",
+  "members": [
+    {
+      "id": "A2001",
+      "name": "林岳賢",
+      "district": 1,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林岳賢"
+    },
+    {
+      "id": "A2002",
+      "name": "黃定和",
+      "district": 1,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃定和"
+    },
+    {
+      "id": "A2003",
+      "name": "林錫明",
+      "district": 1,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林錫明"
+    },
+    {
+      "id": "A2004",
+      "name": "張勝德",
+      "district": 1,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ張勝德"
+    },
+    {
+      "id": "A2005",
+      "name": "林麗",
+      "district": 1,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林　麗"
+    },
+    {
+      "id": "A2006",
+      "name": "楊順木",
+      "district": 1,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ楊順木"
+    },
+    {
+      "id": "A2036",
+      "name": "黃惠慈",
+      "district": 1,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃惠慈"
+    },
+    {
+      "id": "A2008",
+      "name": "林詩穎",
+      "district": 2,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林詩穎"
+    },
+    {
+      "id": "A2009",
+      "name": "賴良洲",
+      "district": 2,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ賴良洲"
+    },
+    {
+      "id": "A2010",
+      "name": "林聰池",
+      "district": 3,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林聰池"
+    },
+    {
+      "id": "A2011",
+      "name": "吳宏謀",
+      "district": 3,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ吳宏謀"
+    },
+    {
+      "id": "A2013",
+      "name": "黃浴沂",
+      "district": 4,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃浴沂"
+    },
+    {
+      "id": "A2035",
+      "name": "黃雯如",
+      "district": 4,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃雯如"
+    },
+    {
+      "id": "A2014",
+      "name": "黃建勇",
+      "district": 5,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃建勇"
+    },
+    {
+      "id": "A2015",
+      "name": "陳福山",
+      "district": 5,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ陳福山"
+    },
+    {
+      "id": "A2016",
+      "name": "謝家倫",
+      "district": 6,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ謝家倫"
+    },
+    {
+      "id": "A2017",
+      "name": "陳漢鍾",
+      "district": 6,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ陳漢鍾"
+    },
+    {
+      "id": "A2018",
+      "name": "黃琤婷",
+      "district": 6,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ黃琤婷"
+    },
+    {
+      "id": "A2019",
+      "name": "陳鴻禧",
+      "district": 6,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ陳鴻禧"
+    },
+    {
+      "id": "A2020",
+      "name": "呂惠卿",
+      "district": 6,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ呂惠卿"
+    },
+    {
+      "id": "A2021",
+      "name": "簡松樹",
+      "district": 7,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ簡松樹"
+    },
+    {
+      "id": "A2022",
+      "name": "林義剛",
+      "district": 7,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林義剛"
+    },
+    {
+      "id": "A2023",
+      "name": "沈信雄",
+      "district": 7,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ沈信雄"
+    },
+    {
+      "id": "A2024",
+      "name": "林佩螢",
+      "district": 8,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ林佩螢"
+    },
+    {
+      "id": "A2025",
+      "name": "楊弘旻",
+      "district": 8,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ楊弘旻"
+    },
+    {
+      "id": "A2026",
+      "name": "謝燦輝",
+      "district": 8,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ謝燦輝"
+    },
+    {
+      "id": "A2027",
+      "name": "邱素梅",
+      "district": 8,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ邱素梅"
+    },
+    {
+      "id": "A2028",
+      "name": "陳文昌",
+      "district": 9,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ陳文昌"
+    },
+    {
+      "id": "A2029",
+      "name": "謝正信",
+      "district": 10,
+      "partyCode": "DDP",
+      "party": "民主進步黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ謝正信"
+    },
+    {
+      "id": "A2031",
+      "name": "陳玉萍",
+      "district": 10,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ陳玉萍"
+    },
+    {
+      "id": "A2032",
+      "name": "孫湯玉惠",
+      "district": 11,
+      "partyCode": "",
+      "party": null,
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ孫湯玉惠"
+    },
+    {
+      "id": "A2033",
+      "name": "沈志弘",
+      "district": 12,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ沈志弘"
+    },
+    {
+      "id": "A2034",
+      "name": "游吉祥",
+      "district": 13,
+      "partyCode": "KMT",
+      "party": "中國國民黨",
+      "source": "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PMZ游吉祥"
+    }
+  ]
+}

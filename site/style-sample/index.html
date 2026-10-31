@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="a">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>宜蘭縣議會觀測・風格樣板</title>
+  <meta name="description" content="宜蘭縣議會觀測的風格樣板，內容皆為範例資料。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要內容</a>
+
+  <div class="sample-bar">
+    <div class="wrap">
+      <p>風格樣板，以下皆為範例資料，不是真實紀錄</p>
+      <div class="theme-switch" role="group" aria-label="切換風格">
+        <button type="button" data-theme-btn="a" aria-pressed="true">A 清</button>
+        <button type="button" data-theme-btn="b" aria-pressed="false">B 紙</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#main">宜蘭縣議會觀測</a>
+      <nav class="nav" aria-label="主選單">
+        <a href="#people" aria-current="location">議員</a>
+        <a href="#bills">議案</a>
+        <a href="#types">統計</a>
+        <a href="#about">關於</a>
+      </nav>
+      <label class="term">
+        屆別
+        <select>
+          <option>第 20 屆（2022–2026）</option>
+          <option>第 19 屆（2018–2022）</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">第 20 屆（2022–2026）</p>
+          <h1 id="hero-title"><span class="line">看懂縣議會，</span><span class="line">每案都查得到</span></h1>
+          <p class="hero-lead">整理議員、議案與會期的公開紀錄，只呈現數字與原文連結。</p>
+          <div class="actions">
+            <a class="btn" href="#people">查看議員</a>
+            <a class="link-quiet" href="#bills">議案列表</a>
+          </div>
+        </div>
+
+        <div class="overview">
+          <dl>
+            <div class="overview-row"><dt>議員人數</dt><dd>34</dd></div>
+            <div class="overview-row"><dt>議案總數</dt><dd>1,286</dd></div>
+            <div class="overview-row"><dt>三讀自治條例</dt><dd>41</dd></div>
+            <div class="overview-row"><dt>定期會</dt><dd>8 次</dd></div>
+          </dl>
+          <p class="source">來源：宜蘭縣議會官網，擷取 2026-10-29，範例數字</p>
+        </div>
+      </section>
+
+      <section class="section" id="people" aria-labelledby="people-title">
+        <div class="section-head">
+          <span class="idx" aria-hidden="true">01</span>
+          <h2 id="people-title">議員</h2>
+          <a href="#people">全部 34 位</a>
+        </div>
+        <ul class="people">
+          <li class="person">
+            <p class="person-name"><a href="#people">陳大文</a></p>
+            <p class="person-meta"><span>第 1 選區</span><span>無黨籍</span></p>
+            <p class="person-stat"><strong>48</strong><span>件提案</span></p>
+          </li>
+          <li class="person">
+            <p class="person-name"><a href="#people">林小華</a></p>
+            <p class="person-meta"><span>第 2 選區</span><span>民主進步黨</span></p>
+            <p class="person-stat"><strong>35</strong><span>件提案</span></p>
+          </li>
+          <li class="person">
+            <p class="person-name"><a href="#people">王志明</a></p>
+            <p class="person-meta"><span>第 3 選區</span><span>中國國民黨</span></p>
+            <p class="person-stat"><strong>52</strong><span>件提案</span></p>
+          </li>
+          <li class="person">
+            <p class="person-name"><a href="#people">黃美玲</a></p>
+            <p class="person-meta"><span>第 4 選區</span><span>無黨籍</span></p>
+            <p class="person-stat"><strong>27</strong><span>件提案</span></p>
+          </li>
+          <li class="person">
+            <p class="person-name"><a href="#people">李建國</a></p>
+            <p class="person-meta"><span>第 5 選區</span><span>民主進步黨</span></p>
+            <p class="person-stat"><strong>41</strong><span>件提案</span></p>
+          </li>
+          <li class="person">
+            <p class="person-name"><a href="#people">張雅惠</a></p>
+            <p class="person-meta"><span>第 6 選區</span><span>中國國民黨</span></p>
+            <p class="person-stat"><strong>39</strong><span>件提案</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="bills" aria-labelledby="bills-title">
+        <div class="section-head">
+          <span class="idx" aria-hidden="true">02</span>
+          <h2 id="bills-title">最新議案</h2>
+          <a href="#bills">全部議案</a>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption>最新議案（範例資料）</caption>
+            <thead>
+              <tr>
+                <th scope="col">案名</th>
+                <th scope="col">類型</th>
+                <th scope="col">提案來源</th>
+                <th scope="col" class="num">日期</th>
+                <th scope="col">進度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">宜蘭縣公有停車場收費及管理自治條例</th>
+                <td data-label="類型">自治條例案</td>
+                <td data-label="提案來源">政府提案</td>
+                <td class="num" data-label="日期">2026-10-22</td>
+                <td data-label="進度"><span class="tag tag-done">三讀通過</span></td>
+              </tr>
+              <tr>
+                <th scope="row">宜蘭縣立體育場場地管理自治條例</th>
+                <td data-label="類型">自治條例案</td>
+                <td data-label="提案來源">政府提案</td>
+                <td class="num" data-label="日期">2026-10-22</td>
+                <td data-label="進度"><span class="tag tag-done">三讀通過</span></td>
+              </tr>
+              <tr>
+                <th scope="row">建請縣府檢討偏鄉公車班次案</th>
+                <td data-label="類型">一般議案</td>
+                <td data-label="提案來源">議員提案</td>
+                <td class="num" data-label="日期">2026-10-14</td>
+                <td data-label="進度"><span class="tag">審查中</span></td>
+              </tr>
+              <tr>
+                <th scope="row">116 年度總預算案</th>
+                <td data-label="類型">預算案</td>
+                <td data-label="提案來源">政府提案</td>
+                <td class="num" data-label="日期">2026-09-23</td>
+                <td data-label="進度"><span class="tag">審查中</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="types" aria-labelledby="types-title">
+        <div class="section-head">
+          <span class="idx" aria-hidden="true">03</span>
+          <h2 id="types-title">本屆議案類型</h2>
+        </div>
+        <!-- --v 是長條長度的資料值，由資料產生，不是版面樣式 -->
+        <ul class="bars">
+          <li class="bar-row" style="--v:100"><span>一般議案</span><b>612 件</b><span class="bar-track" aria-hidden="true"><span class="bar-fill"></span></span></li>
+          <li class="bar-row" style="--v:52"><span>預算案</span><b>318 件</b><span class="bar-track" aria-hidden="true"><span class="bar-fill"></span></span></li>
+          <li class="bar-row" style="--v:27"><span>人民請願案</span><b>164 件</b><span class="bar-track" aria-hidden="true"><span class="bar-fill"></span></span></li>
+          <li class="bar-row" style="--v:12"><span>自治條例案</span><b>73 件</b><span class="bar-track" aria-hidden="true"><span class="bar-fill"></span></span></li>
+          <li class="bar-row" style="--v:7"><span>臨時動議案</span><b>41 件</b><span class="bar-track" aria-hidden="true"><span class="bar-fill"></span></span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>關於本站</h2>
+          <p>資料取自宜蘭縣議會官網的公開頁面，每筆都附原文連結。本站只呈現件數與日期，不做評價或排名。</p>
+        </div>
+        <div>
+          <h2>資料</h2>
+          <p>屆別：第 19、20 屆<br>更新：每週一次</p>
+        </div>
+        <div>
+          <h2>回報錯誤</h2>
+          <p>聯絡信箱（待填）</p>
+        </div>
+        <div>
+          <h2>法律</h2>
+          <p><a href="#about">使用條款</a><br><a href="#about">隱私權政策</a><br><a href="#about">資料授權</a></p>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 宜蘭縣議會觀測。民間資料整理，非宜蘭縣議會官方網站。</p>
+    </div>
+  </footer>
+</body>
+</html>
