@@ -244,3 +244,9 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 .facts.small dd { font-size: var(--text-m); font-weight: 400; }
 .full { margin-top: var(--s3); }
 .full summary { display: flex; align-items: center; min-height: var(--target); cursor: pointer; font-weight: 700; }
+
+/* 搜尋 */
+.search { margin-bottom: var(--s5); max-width: 28rem; }
+.search-row { display: flex; gap: var(--s2); }
+.search-row input { flex: 1; min-width: 0; }
+.search input[type=search] { -webkit-appearance: none; appearance: none; }

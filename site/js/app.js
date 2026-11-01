@@ -98,6 +98,14 @@
   function billsOfMember(name) { return data.bills.filter(function (b) { return b.by.indexOf(name) >= 0; }); }
 
   /* ---- views ---- */
+  function searchForm() {
+    var input = h("input", { type: "search", id: "home-q", name: "q", autocomplete: "off", enterkeyhint: "search" });
+    var form = h("form", { class: "field search home-search", role: "search" },
+      h("label", { for: "home-q" }, "找議員，輸入姓名"),
+      h("div", { class: "search-row" }, input, h("button", { class: "btn", type: "submit" }, "搜尋")));
+    form.addEventListener("submit", function (e) { e.preventDefault(); location.hash = "#/members?q=" + encodeURIComponent(input.value.trim()); });
+    return form;
+  }
   function viewHome(n) {
     var d = district(n) || data.districts[0];
     var tiles = function (list) {
@@ -112,6 +120,7 @@
     var latest = data.bills.filter(function (b) { return b.by.some(function (p) { return ms.some(function (m) { return m.name === p; }); }); });
     return [
       head("選區", "點一塊地，看那個選區的議員與提案。第 " + data.term + " 屆（" + data.termYears + "）。", "示意圖"),
+      searchForm(),
       h("div", { class: "split" },
         h("section", { class: "sticky", "aria-label": "選區示意圖" },
           h("div", { class: "sheet" }, tiles(main)),
@@ -130,17 +139,55 @@
     ];
   }
 
-  function viewMembers() {
-    var names = data.members.length;
+  var SCOPE = "提案數只算議員提案，不含質詢與臨時動議。";
+  function viewMembers(q) {
+    var term = q.get("q") || "";
+    var list = h("ul", { class: "rows" });
+    var empty = h("p", { class: "sub" }, "沒有符合的議員。");
+    var fill = function (v) {
+      var hit = data.members.filter(function (m) { return !v.trim() || m.name.indexOf(v.trim()) >= 0; });
+      list.textContent = "";
+      append(list, hit.map(memberRow));
+      empty.hidden = hit.length > 0;
+    };
+    var input = h("input", { type: "search", id: "member-q", value: term, autocomplete: "off", enterkeyhint: "search" });
+    input.addEventListener("input", function () { fill(input.value); });
+    fill(term);
     return [
-      head("議員", "第 " + data.term + " 屆現任名單，共 " + names + " 位，依選區排列，不做排名。"),
-      h("ul", { class: "rows" }, data.members.map(memberRow)),
+      head("議員", "第 " + data.term + " 屆現任名單，共 " + data.members.length + " 位，依選區排列，不做排名。" + SCOPE),
+      h("div", { class: "field search" }, h("label", { for: "member-q" }, "找議員，輸入姓名"), input),
+      list, empty,
       data.outsiders.length ? h("div", { class: "block" },
         sect("本屆曾提案，但不在現任名單", 2),
         h("p", { class: "sub" }, "官網現任名單沒有這些名字。本站不推測他們的狀況。"),
         h("ul", { class: "rows" }, data.outsiders.map(function (o) {
-          return h("li", null, h("span", { class: "name" }, o.name), h("span", { class: "count" }, o.proposed + " ", h("span", null, "件提案")));
+          return h("li", null, h("span", { class: "name" }, h("a", { href: "#/o/" + encodeURIComponent(o.name) }, o.name)), h("span", { class: "count" }, o.proposed + " ", h("span", null, "件提案")));
         }))) : null
+    ];
+  }
+
+  function viewOutsider(name) {
+    var o = data.outsiders.filter(function (x) { return x.name === name; })[0];
+    if (!o) return viewMissing();
+    var mine = billsOfMember(name);
+    return [
+      head(name, "不在現任名單"),
+      h("p", null, "第 " + data.term + " 屆提案 " + o.proposed + " 件。官網現任名單沒有這個名字，本站不推測原因。" + SCOPE),
+      h("div", { class: "block" }, sect("提案", 2), billList(mine.slice(0, 25))),
+      h("p", { class: "block" }, h("a", { href: "#/members" }, "回到議員"))
+    ];
+  }
+
+  function viewSessions() {
+    return [
+      head("會期", "只列有議員提案的會期。日期是議案登錄日，不是開會日；正式日程看議會官網。"),
+      h("p", null, h("a", { href: "https://www.ilcc.gov.tw/Incfiles/PBrowse.aspx?Sys_id=PC_0620", rel: "noopener", target: "_blank" }, "議會官網預定日程表")),
+      h("ul", { class: "rows" }, data.sessions.map(function (s) {
+        return h("li", null,
+          h("span", { class: "name" }, h("a", { href: "#/bills?s=" + encodeURIComponent(s.label) }, s.label)),
+          h("span", { class: "count" }, s.n + " ", h("span", null, "件議案")),
+          h("span", { class: "meta" }, h("span", null, s.from === s.to ? s.from : s.from + " 至 " + s.to), h("span", null, s.members + " 位議員提案")));
+      }))
     ];
   }
 
@@ -157,7 +204,8 @@
           h("figcaption", null, m.photo.from === "council" ? "照片：" : "照片：111 年選舉公報，", h("a", { href: m.photo.source, rel: "noopener", target: "_blank" }, m.photo.from === "council" ? "議會官網" : "中選會原件"))),
         h("div", null,
           m.party ? h("p", null, partyChip(m)) : null,
-          h("p", null, "第 " + data.term + " 屆提案 " + m.proposed + " 件，連署 " + m.cosigned + " 件。"))),
+          h("p", null, "第 " + data.term + " 屆提案 " + m.proposed + " 件，連署 " + m.cosigned + " 件。"),
+          h("p", { class: "sub" }, SCOPE))),
       assetsBlock(m),
       h("div", { class: "block" }, sect("提案類別", 2),
         cats.length ? h("ul", { class: "bars" }, cats.map(function (c) {
@@ -239,23 +287,25 @@
         h("ul", null,
           h("li", null, "第 19 屆：官網議案資料庫沒有這一屆的議員提案，因此尚未收錄。"),
           h("li", null, "政府提案（含總預算與自治條例）：本站目前只收議員提案。"),
-          h("li", null, "出席率、表決紀錄、質詢內容：沒有找到結構化的來源，因此不顯示。"),
+          h("li", null, "出席率、表決紀錄、質詢內容：官網沒有可整理的結構化資料，因此不顯示。"),
+          h("li", null, "財產申報的歷年對照：目前只收最新一份。"),
           h("li", null, "選區圖形是示意，不是實際地界。")),
         h("h2", null, "資料處理"),
         h("ul", null,
-          h("li", null, "提案數與連署數，都是按官網提案人與連署人欄位的姓名計算。"),
+          h("li", null, "提案數與連署數，都是按官網提案人與連署人欄位的姓名計算，只計議員提案，不含質詢與臨時動議。"),
+          h("li", null, "會期頁的日期是議案登錄日，不是開會日。"),
           h("li", null, "官網現任名單沒有標黨籍的議員，本站不顯示黨籍。"),
           h("li", null, "有 2 位提案人不在現任名單，原因官網沒說明，本站不推測。"),
           h("li", null, "有幾筆提案人欄位疑似筆誤，已在該筆標示，未計入任何議員。"),
           h("li", null, "決議欄把「照案通過」等明顯同義寫法合併顯示，其餘照原文。")),
         h("h2", null, "回報錯誤"),
-        h("p", null, "聯絡信箱：待填。"))
+        h("p", null, "資料有錯，請到", h("a", { href: "https://github.com/tachikoma8964/yilan-council-watch/issues", rel: "noopener", target: "_blank" }, "GitHub 議題頁"), "留言，附上議員姓名與錯在哪裡。"))
     ];
   }
   function viewMissing() { return [head("找不到這個頁面"), h("p", null, h("a", { href: "#/" }, "回到選區"))]; }
 
   /* ---- router ---- */
-  var TITLES = { home: "選區", members: "議員", bills: "議案", about: "關於" };
+  var TITLES = { home: "選區", members: "議員", bills: "議案", sessions: "會期", about: "關於" };
   function route() {
     if (!data) return;
     var hash = location.hash.replace(/^#/, "") || "/";
@@ -265,8 +315,10 @@
     var key = "home", view;
     if (!path.length) view = viewHome(1);
     else if (path[0] === "d") view = viewHome(parseInt(path[1], 10));
-    else if (path[0] === "members") { key = "members"; view = viewMembers(); }
+    else if (path[0] === "members") { key = "members"; view = viewMembers(q); }
     else if (path[0] === "m") { key = "members"; view = viewMember(path[1]); }
+    else if (path[0] === "o") { key = "members"; view = viewOutsider(decodeURIComponent(path[1] || "")); }
+    else if (path[0] === "sessions") { key = "sessions"; view = viewSessions(); }
     else if (path[0] === "bills") { key = "bills"; view = viewBills(q); }
     else if (path[0] === "about") { key = "about"; view = viewAbout(); }
     else view = viewMissing();
@@ -287,7 +339,10 @@
 
   fetch("data/data.json").then(function (r) { return r.json(); }).then(function (d) {
     data = d;
-    document.getElementById("foot-meta").textContent = "資料來源：宜蘭縣議會官網，擷取日 " + d.retrieved + "。回報錯誤：待填。";
+    var foot = document.getElementById("foot-meta");
+    foot.textContent = "";
+    append(foot, ["議案與名單：宜蘭縣議會官網，擷取日 " + d.retrieved + "。財產申報：監察院廉政專刊。", " ",
+      h("a", { href: "https://github.com/tachikoma8964/yilan-council-watch/issues", rel: "noopener", target: "_blank" }, "回報錯誤")]);
     route();
   }).catch(function () {
     app.textContent = "資料載入失敗，請稍後再試。";
