@@ -106,6 +106,15 @@
     form.addEventListener("submit", function (e) { e.preventDefault(); location.hash = "#/members?q=" + encodeURIComponent(input.value.trim()); });
     return form;
   }
+  function toMap() {
+    var b = h("button", { class: "to-map", type: "button" }, "選其他選區");
+    b.addEventListener("click", function () {
+      var sheet = document.querySelector(".sheet");
+      sheet.scrollIntoView({ block: "start" });
+      sheet.querySelector("[aria-current]").focus({ preventScroll: true });
+    });
+    return b;
+  }
   function viewHome(n) {
     var d = district(n) || data.districts[0];
     var tiles = function (list) {
@@ -120,16 +129,16 @@
     var latest = data.bills.filter(function (b) { return b.by.some(function (p) { return ms.some(function (m) { return m.name === p; }); }); });
     return [
       head("選區", "點一塊地，看那個選區的議員與提案。第 " + data.term + " 屆（" + data.termYears + "）。", "示意圖"),
-      searchForm(),
       h("div", { class: "split" },
         h("section", { class: "sticky", "aria-label": "選區示意圖" },
           h("div", { class: "sheet" }, tiles(main)),
           h("p", { class: "legend-group" }, "原住民選區"),
           h("div", { class: "sheet strip" }, tiles(native)),
           h("p", { class: "swatches" }, [["n", "北"], ["c", "中"], ["s", "南"], ["w", "西"], ["i", "原住民選區"]].map(function (g) { return h("span", { class: "g-" + g[0] }, h("i"), g[1]); })),
-          h("p", { class: "legend" }, "顏色只表示大致方位。紅色是選區號。圖形是示意，不是實際地界。")),
+          h("p", { class: "legend" }, "顏色只表示大致方位。紅色是選區號。圖形是示意，不是實際地界。"),
+          searchForm()),
         h("section", { class: "detail g-" + GROUP[d.n], "aria-labelledby": "dist-title" },
-          h("p", { class: "no" }, "地號 " + pad(d.n)),
+          h("p", { class: "no" }, "地號 " + pad(d.n), toMap()),
           h("h2", { id: "dist-title" }, "第 " + d.n + " 選區"),
           h("p", { class: "sub" }, d.area + "，" + d.seats + " 席"),
           h("div", { class: "block" }, sect("議員（" + ms.length + " 位）"), h("ul", { class: "rows" }, ms.map(memberRow))),
@@ -198,7 +207,7 @@
     var max = cats.length ? cats[0][1] : 1;
     var mine = billsOfMember(m.name);
     return [
-      head(m.name, "第 " + m.district + " 選區（" + district(m.district).area + "）"),
+      head(m.name, [h("a", { href: "#/d/" + m.district }, "第 " + m.district + " 選區"), "（" + district(m.district).area + "）"]),
       h("div", { class: "profile" },
         h("figure", { class: "portrait" }, face(m, "l"),
           h("figcaption", null, m.photo.from === "council" ? "照片：" : "照片：111 年選舉公報，", h("a", { href: m.photo.source, rel: "noopener", target: "_blank" }, m.photo.from === "council" ? "議會官網" : "中選會原件"))),
@@ -248,8 +257,9 @@
       h("label", { class: "field" }, "會次", h("select", { name: "s" }, options(sess, cur.s, "全部"))),
       h("label", { class: "field" }, "選區", h("select", { name: "d" }, options(data.districts.map(function (d) { return { value: d.n, label: "第 " + d.n + " 選區" }; }), cur.d, "全部"))),
       h("label", { class: "field" }, "議員", h("select", { name: "m" }, options(names, cur.m, "全部"))),
-      h("label", { class: "field" }, "關鍵字", h("input", { name: "k", type: "search", value: cur.k, autocomplete: "off" })),
-      h("button", { class: "btn", type: "submit" }, "查詢"));
+      h("label", { class: "field wide" }, "關鍵字",
+        h("div", { class: "search-row" }, h("input", { name: "k", type: "search", value: cur.k, autocomplete: "off", enterkeyhint: "search" }), h("button", { class: "btn", type: "submit" }, "查詢"))));
+    form.addEventListener("change", function (e) { if (e.target.tagName === "SELECT") form.requestSubmit(); });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var p = new URLSearchParams();
@@ -259,13 +269,14 @@
     var more = null;
     if (shown.length < found.length) {
       var next = new URLSearchParams(q); next.set("p", cur.p + 1);
-      more = h("div", { class: "btn-row" }, h("a", { class: "more", href: "#/bills?" + next.toString() }, "再看 " + Math.min(PAGE, found.length - shown.length) + " 件"));
+      more = h("div", { class: "btn-row" }, h("a", { class: "btn more-btn", href: "#/bills?" + next.toString() }, "再看 " + Math.min(PAGE, found.length - shown.length) + " 件"));
     }
+    var filtered = cur.c || cur.s || cur.d || cur.m || cur.k;
     return [
       head("議案", "第 " + data.term + " 屆議員提案，共 " + data.bills.length + " 件。政府提案不在這裡。"),
       form,
-      h("p", { class: "count-line", role: "status" }, "符合 " + found.length + " 件，顯示 " + shown.length + " 件"),
-      billList(shown, cur.p > 1 ? (cur.p - 1) * PAGE : undefined), more
+      h("p", { class: "count-line", role: "status" }, "符合 " + found.length + " 件，顯示 " + shown.length + " 件", filtered ? [" ", h("a", { href: "#/bills" }, "清除篩選")] : null),
+      found.length ? billList(shown, cur.p > 1 ? (cur.p - 1) * PAGE : undefined) : h("p", null, "沒有符合的議案。換個條件，或", h("a", { href: "#/bills" }, "看全部 " + data.bills.length + " 件"), "。"), more
     ];
   }
 
