@@ -120,7 +120,7 @@
     var tiles = function (list) {
       return list.map(function (x) {
         return h("a", { href: "#/d/" + x.n, class: "parcel p" + x.n + " g-" + GROUP[x.n], "aria-current": x.n === d.n ? "true" : null },
-          h("b", null, pad(x.n)), SHORT[x.n]);
+          h("b", null, pad(x.n)), h("span", null, SHORT[x.n]));
       });
     };
     var main = data.districts.filter(function (x) { return x.n <= 10; });
@@ -128,15 +128,14 @@
     var ms = membersOf(d.n);
     var latest = data.bills.filter(function (b) { return b.by.some(function (p) { return ms.some(function (m) { return m.name === p; }); }); });
     return [
-      head("選區", "點一塊地，看那個選區的議員與提案。第 " + data.term + " 屆（" + data.termYears + "）。", "示意圖"),
+      head("選區", "宜蘭縣分成 13 個選區，像地籍圖一樣排在下面。點一塊地，看那個選區的議員與提案。第 " + data.term + " 屆（" + data.termYears + "）。", "示意圖"),
+      searchForm(),
       h("div", { class: "split" },
         h("section", { class: "sticky", "aria-label": "選區示意圖" },
           h("div", { class: "sheet" }, tiles(main)),
           h("p", { class: "legend-group" }, "原住民選區"),
           h("div", { class: "sheet strip" }, tiles(native)),
-          h("p", { class: "swatches" }, [["n", "北"], ["c", "中"], ["s", "南"], ["w", "西"], ["i", "原住民選區"]].map(function (g) { return h("span", { class: "g-" + g[0] }, h("i"), g[1]); })),
-          h("p", { class: "legend" }, "顏色只表示大致方位。紅色是選區號。圖形是示意，不是實際地界。"),
-          searchForm()),
+          h("p", { class: "legend" }, "上方是北，右邊是海。紅字是選區號碼。地塊只表示大概位置，不是實際地界。")),
         h("section", { class: "detail g-" + GROUP[d.n], "aria-labelledby": "dist-title" },
           h("p", { class: "no" }, "地號 " + pad(d.n), toMap()),
           h("h2", { id: "dist-title" }, "第 " + d.n + " 選區"),
