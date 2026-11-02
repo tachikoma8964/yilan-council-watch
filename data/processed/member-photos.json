@@ -1,166 +1,134 @@
 {
- "A2005": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 1
- },
- "A2003": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 1
- },
- "A2004": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 1
- },
- "A2036": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 3,
-  "gazetteDistrict": 1
- },
- "A2006": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 3,
-  "gazetteDistrict": 1
+ "A2001": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2001.JPG",
+  "from": "council"
  },
  "A2002": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 3,
-  "gazetteDistrict": 1
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2002.JPG",
+  "from": "council"
  },
- "A2032": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 4,
-  "gazetteDistrict": 1
+ "A2003": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2003.JPG",
+  "from": "council"
  },
- "A2033": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 4,
-  "gazetteDistrict": 1
+ "A2004": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2004.JPG",
+  "from": "council"
  },
- "A2001": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC1%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 4,
-  "gazetteDistrict": 1
+ "A2005": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2005.JPG",
+  "from": "council"
+ },
+ "A2006": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2006.JPG",
+  "from": "council"
+ },
+ "A2036": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2036.JPG",
+  "from": "council"
  },
  "A2008": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC2%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 2
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2008.JPG",
+  "from": "council"
  },
  "A2009": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC2%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 2
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2009.JPG",
+  "from": "council"
  },
  "A2010": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC3%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 3
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2010.JPG",
+  "from": "council"
  },
  "A2011": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC3%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 3
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2011.JPG",
+  "from": "council"
  },
  "A2013": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC4%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 4
- },
- "A2015": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC5%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 5
- },
- "A2014": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC5%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 5
- },
- "A2017": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 6
- },
- "A2016": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 6
- },
- "A2018": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 6
- },
- "A2020": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 6
- },
- "A2034": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 3,
-  "gazetteDistrict": 6
- },
- "A2019": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 3,
-  "gazetteDistrict": 6
- },
- "A2021": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC7%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 7
- },
- "A2023": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC7%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 7
- },
- "A2022": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC7%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 7
- },
- "A2026": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC8%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 8
- },
- "A2024": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC8%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 8
- },
- "A2027": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC8%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 8
- },
- "A2025": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC8%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 8
- },
- "A2028": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC9%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 9
- },
- "A2031": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC10%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 10
- },
- "A2029": {
-  "source": "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/06%E7%B8%A3%E5%B8%82%E8%AD%B0%E5%93%A1/111%E5%B9%B4/14%E5%AE%9C%E8%98%AD%E7%B8%A3/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%AC%AC10%E9%81%B8%E8%88%89%E5%8D%80.pdf",
-  "page": 2,
-  "gazetteDistrict": 10
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2013.JPG",
+  "from": "council"
  },
  "A2035": {
   "source": "https://www.ilcc.gov.tw/pictures/people/A2035.JPG",
+  "from": "council"
+ },
+ "A2014": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2014.JPG",
+  "from": "council"
+ },
+ "A2015": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2015.JPG",
+  "from": "council"
+ },
+ "A2016": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2016.JPG",
+  "from": "council"
+ },
+ "A2017": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2017.JPG",
+  "from": "council"
+ },
+ "A2018": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2018.JPG",
+  "from": "council"
+ },
+ "A2019": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2019.JPG",
+  "from": "council"
+ },
+ "A2020": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2020.JPG",
+  "from": "council"
+ },
+ "A2021": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2021.JPG",
+  "from": "council"
+ },
+ "A2022": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2022.JPG",
+  "from": "council"
+ },
+ "A2023": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2023.JPG",
+  "from": "council"
+ },
+ "A2024": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2024.JPG",
+  "from": "council"
+ },
+ "A2025": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2025.JPG",
+  "from": "council"
+ },
+ "A2026": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2026.JPG",
+  "from": "council"
+ },
+ "A2027": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2027.JPG",
+  "from": "council"
+ },
+ "A2028": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2028.JPG",
+  "from": "council"
+ },
+ "A2029": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2029.JPG",
+  "from": "council"
+ },
+ "A2031": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2031.JPG",
+  "from": "council"
+ },
+ "A2032": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2032.JPG",
+  "from": "council"
+ },
+ "A2033": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2033.JPG",
+  "from": "council"
+ },
+ "A2034": {
+  "source": "https://www.ilcc.gov.tw/pictures/people/A2034.JPG",
   "from": "council"
  }
 }

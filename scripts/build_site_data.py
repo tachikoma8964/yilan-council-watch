@@ -51,6 +51,7 @@ def main():
     photos = json.loads((ilcc.PROCESSED / "member-photos.json").read_text(encoding="utf-8"))
     declared = json.loads((ilcc.PROCESSED / "assets-20.json").read_text(encoding="utf-8"))
     registered = json.loads((ilcc.PROCESSED / "candidates-21.json").read_text(encoding="utf-8"))
+    candidate_photos = json.loads((ilcc.PROCESSED / "candidate-photos.json").read_text(encoding="utf-8"))
     bills = [b for b in motions["bills"] if b["term"] == TERM]
 
     proposed, cosigned, categories = Counter(), Counter(), {}
@@ -106,6 +107,8 @@ def main():
             row.update(status="former", proposed=outsiders[c["name"]])
         else:
             row["status"] = "new"
+        if c["name"] not in roster and c["name"] in candidate_photos:
+            row["photo"] = candidate_photos[c["name"]]
         candidates.append(row)
 
     data = {

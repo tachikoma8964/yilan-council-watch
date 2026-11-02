@@ -190,6 +190,7 @@
   }
 
   var NEWCOMER = "還不是議員，所以沒有提案與連署紀錄。";
+  var PHOTO_FROM = { gazette: "照片：111 年選舉公報", council: "照片：議會官網", facebook: "照片：本人臉書", party: "照片：政黨網站", site: "照片：本人網站" };
   function candidateRow(c) {
     var m = c.status === "member" ? member(c.id) : null;
     var name = c.status === "member" ? h("a", { href: "#/m/" + c.id }, c.name)
@@ -199,10 +200,12 @@
     var note = c.status === "member" ? "現任議員，第 " + data.term + " 屆連署 " + c.cosigned + " 件"
       : c.status === "former" ? "本屆曾提案，不在現任名單" : null;
     return h("li", { class: "person" },
-      m ? face(m, "s") : h("span", { class: "face none face-s", "aria-hidden": "true" }, c.name.charAt(0)),
+      m ? face(m, "s") : c.photo ? h("img", { class: "face face-s", src: "photos/" + c.photo.file + "-s.jpg", alt: "", width: 56, height: 70, loading: "lazy", decoding: "async" })
+        : h("span", { class: "face none face-s", "aria-hidden": "true" }, c.name.charAt(0)),
       h("span", { class: "name" }, name, c.fullName ? h("span", { class: "alias" }, c.fullName.slice(c.name.length)) : null),
       count,
-      h("span", { class: "meta" }, c.party ? partyChip(c) : h("span", null, "無黨籍登記"), note ? h("span", null, note) : null));
+      h("span", { class: "meta" }, c.party ? partyChip(c) : h("span", null, "無黨籍登記"), note ? h("span", null, note) : null,
+        c.photo ? h("a", { href: c.photo.source, rel: "noopener", target: "_blank" }, PHOTO_FROM[c.photo.from] || "照片來源") : null));
   }
   function candidatesOf(n) { return data.candidates.rows.filter(function (c) { return c.district === n; }); }
   function viewCandidates() {
@@ -243,7 +246,7 @@
       head(m.name, [h("a", { href: "#/d/" + m.district }, "第 " + m.district + " 選區"), "（" + district(m.district).area + "）"]),
       h("div", { class: "profile" },
         h("figure", { class: "portrait" }, face(m, "l"),
-          h("figcaption", null, m.photo.from === "council" ? "照片：" : "照片：111 年選舉公報，", h("a", { href: m.photo.source, rel: "noopener", target: "_blank" }, m.photo.from === "council" ? "議會官網" : "中選會原件"))),
+          h("figcaption", null, "照片：", h("a", { href: m.photo.source, rel: "noopener", target: "_blank" }, "議會官網"))),
         h("div", null,
           m.party ? h("p", null, partyChip(m)) : null,
           h("p", null, "第 " + data.term + " 屆提案 " + m.proposed + " 件，連署 " + m.cosigned + " 件。"),
@@ -324,8 +327,7 @@
           h("li", null, "議員名單：", h("a", { href: data.sources.members, rel: "noopener" }, "宜蘭縣議會官網議員頁")),
           h("li", null, "議員提案：", h("a", { href: data.sources.bills, rel: "noopener" }, "宜蘭縣議會議案資料庫"), "，每筆都連回原文。"),
           h("li", null, "選區範圍：維基百科「宜蘭縣議會」，各選區席次與官網名單相符，尚待與中央選舉委員會公告核對。"),
-          h("li", null, "議員照片：", h("a", { href: "https://bulletin.cec.gov.tw/", rel: "noopener" }, data.photoCredit), "。是 111 年參選時刊登的照片。"),
-          h("li", null, "黃雯如 2024 年補選才就任，不在 111 年公報裡，照片取自", h("a", { href: "https://www.ilcc.gov.tw/Html/H_05/H_05.asp", rel: "noopener" }, "議會官網"), "。"),
+          h("li", null, "議員照片：", h("a", { href: "https://www.ilcc.gov.tw/Html/H_05/H_05.asp", rel: "noopener" }, "議會官網各議員專頁"), "。參選人照片：曾參選者取自 111 年選舉公報，其餘取自本人公開的臉書或政黨網站，每張都附來源；找不到公開照片的只顯示姓氏。"),
           h("li", null, "財產申報：", h("a", { href: data.assetSource, rel: "noopener" }, "監察院公職人員財產申報查詢"), "，取每位議員最新一份一般申報。股票欄是票面價額，不是股價；金額含配偶與未成年子女。"),
           h("li", null, "參選人：", h("a", { href: data.candidates.source, rel: "noopener" }, "中選會 115 年候選人登記名冊"), "。是登記名單，不是正式候選人名單；號次與正式名單等選委會 " + data.candidates.announce + " 公告後更新。"),
           h("li", null, "資料擷取日：" + data.retrieved + "。")),

@@ -49,10 +49,10 @@ def ocr_lines(png):
     return rows
 
 
-def portraits(doc, number):
+def portraits(doc, number, stem=None, png_dir=None):
     """Yield (name, xref, page_no) for each portrait whose printed name could be read."""
     for page_no, page in enumerate(doc, 1):
-        png = GAZETTE / "png" / f"d{number}-p{page_no}.png"
+        png = (png_dir or GAZETTE / "png") / f"{stem or 'd' + str(number)}-p{page_no}.png"
         if not png.exists():
             png.parent.mkdir(exist_ok=True)
             page.get_pixmap(dpi=80).save(png)
