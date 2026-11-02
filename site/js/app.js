@@ -356,7 +356,8 @@
       h("a", { href: "https://github.com/tachikoma8964/yilan-council-watch/issues", rel: "noopener", target: "_blank" }, "回報錯誤")]);
     route();
   }).catch(function () {
-    app.textContent = "資料載入失敗，請稍後再試。";
+    app.textContent = "";
+    append(app, [head("資料載入失敗"), h("p", null, "可能是網路暫時不通。", h("a", { href: location.href }, "重新載入"), "再試一次。")]);
   });
   window.addEventListener("hashchange", route);
 })();

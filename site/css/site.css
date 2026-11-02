@@ -71,10 +71,12 @@ a { color: var(--ink); text-underline-offset: 0.2em; }
 a:hover { color: var(--accent); }
 :focus-visible { outline: var(--ring) solid var(--accent); outline-offset: 2px; }
 main:focus, h1:focus, h2:focus { outline: none; }
+::selection { background: var(--c-strong); color: var(--ink); }
+input, select, textarea { caret-color: var(--accent); accent-color: var(--accent); }
 
 .wrap {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1200px;
   margin-inline: auto;
   padding-inline: max(var(--s4), env(safe-area-inset-left)) max(var(--s4), env(safe-area-inset-right));
 }
@@ -108,7 +110,8 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 /* 選區地籍圖 */
 .split { display: grid; gap: var(--s6); }
 @media (min-width: 900px) {
-  .split { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--s7); }
+  .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s7); }
+  :root { --tile-h: 136px; }
   .sticky { position: sticky; top: var(--s4); align-self: start; }
 }
 .sheet {
@@ -164,7 +167,7 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 .rows > li { position: relative; display: grid; grid-template-columns: 1fr auto; column-gap: var(--s4); padding: var(--s3) 0; border-bottom: var(--rule) solid var(--line); }
 .rows .name { font-weight: 700; }
 .rows .name a::after { content: ""; position: absolute; inset: 0; }
-.rows > li:has(.name a:hover) { background: var(--tint); box-shadow: 0 0 0 var(--s2) var(--tint); }
+.rows > li:has(.name a:hover) { background: var(--tint); padding-inline: var(--s2); margin-inline: calc(-1 * var(--s2)); }
 .bill .meta a, .foot a { display: inline-block; padding-block: var(--s2); margin-block: calc(-1 * var(--s2)); }
 .rows .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--s4); color: var(--muted); font-size: var(--text-s); }
 .rows .count { text-align: right; white-space: nowrap; }
@@ -181,12 +184,14 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 .face.none { display: grid; place-items: center; color: var(--muted); font-size: var(--text-l); font-weight: 700; }
 .profile { display: flex; flex-wrap: wrap; gap: var(--s4) var(--s5); align-items: flex-start; }
 .portrait { margin: 0; }
-.portrait figcaption { max-width: 160px; margin-top: var(--s2); color: var(--muted); font-size: var(--text-s); }
+.portrait figcaption { margin-top: var(--s2); color: var(--muted); font-size: var(--text-s); }
+@media (min-width: 720px) { .portrait figcaption { max-width: 160px; } }
 
 .bill .date { color: var(--accent); font-weight: 700; font-size: var(--text-s); }
 .bill .result.ok { background: var(--ok); }
 .bill .result { display: inline-block; margin-left: var(--s2); padding: 0 var(--s2); border: var(--rule) solid var(--ink); color: var(--ink); font-size: var(--text-s); font-weight: 400; }
 .bill .title { margin-top: var(--s1); }
+.bill .title, .bill .meta { max-width: var(--measure); }
 .bill .meta a { margin-left: var(--s2); }
 .bill .issue { color: var(--accent); font-size: var(--text-s); }
 
