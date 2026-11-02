@@ -4,6 +4,7 @@
   var PAGE = 25;
   var GROUP = { 1: "c", 2: "n", 3: "n", 4: "c", 5: "c", 6: "s", 7: "s", 8: "s", 9: "w", 10: "s", 11: "i", 12: "i", 13: "i" };
   var SHORT = { 1: "宜蘭市", 2: "頭城", 3: "礁溪", 4: "員山", 5: "壯圍", 6: "羅東", 7: "五結", 8: "冬山", 9: "三星大同", 10: "蘇澳南澳", 11: "平地原住民", 12: "山地原住民", 13: "山地原住民" };
+  var PHOTO_V = "?v=2"; // bumped when a photo file changes under the same name
   var PARTY = { "民主進步黨": "ddp", "中國國民黨": "kmt", "台灣民眾黨": "tpp", "時代力量": "npp" };
   var app = document.getElementById("main");
   var data = null;
@@ -52,7 +53,7 @@
   function face(m, size) {
     if (!m.photo) return h("span", { class: "face none face-" + size, "aria-hidden": "true" }, m.name.charAt(0));
     var w = size === "l" ? 160 : 56;
-    return h("img", { class: "face face-" + size, src: "photos/" + m.id + (size === "l" ? "" : "-s") + ".jpg", alt: "", width: w, height: Math.round(w * 1.25), loading: size === "l" ? null : "lazy", decoding: "async" });
+    return h("img", { class: "face face-" + size, src: "photos/" + m.id + (size === "l" ? "" : "-s") + ".jpg" + PHOTO_V, alt: "", width: w, height: Math.round(w * 1.25), loading: size === "l" ? null : "lazy", decoding: "async" });
   }
   function memberRow(m) {
     return h("li", { class: "person" },
@@ -200,7 +201,7 @@
     var note = c.status === "member" ? "現任議員，第 " + data.term + " 屆連署 " + c.cosigned + " 件"
       : c.status === "former" ? "本屆曾提案，不在現任名單" : null;
     return h("li", { class: "person" },
-      m ? face(m, "s") : c.photo ? h("img", { class: "face face-s", src: "photos/" + c.photo.file + "-s.jpg", alt: "", width: 56, height: 70, loading: "lazy", decoding: "async" })
+      m ? face(m, "s") : c.photo ? h("img", { class: "face face-s", src: "photos/" + c.photo.file + "-s.jpg" + PHOTO_V, alt: "", width: 56, height: 70, loading: "lazy", decoding: "async" })
         : h("span", { class: "face none face-s", "aria-hidden": "true" }, c.name.charAt(0)),
       h("span", { class: "name" }, name, c.fullName ? h("span", { class: "alias" }, c.fullName.slice(c.name.length)) : null),
       count,
