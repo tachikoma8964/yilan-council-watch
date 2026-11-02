@@ -50,6 +50,7 @@ def main():
     roster = {m["name"]: m for m in councilors["members"]}
     photos = json.loads((ilcc.PROCESSED / "member-photos.json").read_text(encoding="utf-8"))
     declared = json.loads((ilcc.PROCESSED / "assets-20.json").read_text(encoding="utf-8"))
+    registered = json.loads((ilcc.PROCESSED / "candidates-21.json").read_text(encoding="utf-8"))
     bills = [b for b in motions["bills"] if b["term"] == TERM]
 
     proposed, cosigned, categories = Counter(), Counter(), {}
@@ -96,12 +97,25 @@ def main():
         "assets": {k: v for k, v in declared["members"][m["id"]].items() if k != "name"} if m["id"] in declared["members"] else None,
     } for m in councilors["members"]]
 
+    candidates = []
+    for c in registered["candidates"]:
+        row = {"district": c["district"], "name": c["name"], "fullName": c["fullName"], "party": c["party"], "registeredOn": c["registeredOn"]}
+        if c["name"] in roster:
+            row.update(status="member", id=roster[c["name"]]["id"], proposed=proposed[c["name"]], cosigned=cosigned[c["name"]])
+        elif c["name"] in outsiders:
+            row.update(status="former", proposed=outsiders[c["name"]])
+        else:
+            row["status"] = "new"
+        candidates.append(row)
+
     data = {
         "term": TERM, "termYears": "2022–2026",
         "retrieved": motions["retrieved"],
         "sources": {"members": councilors["sourcePage"], "bills": "https://www.ilcc.gov.tw/Html/H_08/H_08.aspx"},
         "assetSource": declared["source"],
         "sessions": sessions,
+        "candidates": {"term": 21, "vote": "2026-11-28", "announce": "2026-11-17", "listDate": registered["tableDate"],
+                       "source": registered["sourcePage"], "file": registered["sourceFile"], "rows": candidates},
         "photoCredit": "中央選舉委員會選舉公報（111 年，宜蘭縣選舉委員會編印）",
         "districts": [{"n": n, "area": area, "seats": seats} for n, area, seats in DISTRICTS],
         "members": members,

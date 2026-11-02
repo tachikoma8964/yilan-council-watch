@@ -1,0 +1,422 @@
+{
+ "term": 21,
+ "election": "115年地方公職人員選舉",
+ "tableDate": "2026-09-07",
+ "sourcePage": "https://web.cec.gov.tw/central/article/64709",
+ "sourceFile": "https://web.cec.gov.tw/api/file/9ccb6224-20be-479e-931f-81aa6155f28a.pdf",
+ "candidates": [
+  {
+   "district": 1,
+   "registeredOn": "2026-08-31",
+   "name": "劉仲書",
+   "fullName": null,
+   "party": "時代力量"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-08-31",
+   "name": "林麗",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-08-31",
+   "name": "游國連",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-01",
+   "name": "何加忻",
+   "fullName": null,
+   "party": "正神名黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-01",
+   "name": "林岳賢",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-01",
+   "name": "黃光佑",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-02",
+   "name": "張勝德",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-02",
+   "name": "莊淑如",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-02",
+   "name": "陳漢澤",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-02",
+   "name": "黃定和",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-03",
+   "name": "林蒼佑",
+   "fullName": null,
+   "party": "台灣民眾黨"
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-03",
+   "name": "林錫明",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-03",
+   "name": "楊易林",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-04",
+   "name": "項秀蘭",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 1,
+   "registeredOn": "2026-09-04",
+   "name": "黃奎翰",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 2,
+   "registeredOn": "2026-09-02",
+   "name": "林詩穎",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 2,
+   "registeredOn": "2026-09-02",
+   "name": "賴良洲",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 2,
+   "registeredOn": "2026-09-04",
+   "name": "林瑞文",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 3,
+   "registeredOn": "2026-09-02",
+   "name": "李淑芬",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 3,
+   "registeredOn": "2026-09-02",
+   "name": "林聰池",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 3,
+   "registeredOn": "2026-09-03",
+   "name": "游順評",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 3,
+   "registeredOn": "2026-09-04",
+   "name": "吳秋玟",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 3,
+   "registeredOn": "2026-09-04",
+   "name": "張永德",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 4,
+   "registeredOn": "2026-09-02",
+   "name": "李姿婷",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 4,
+   "registeredOn": "2026-09-03",
+   "name": "黃浴沂",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 4,
+   "registeredOn": "2026-09-04",
+   "name": "陳玉麟",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 5,
+   "registeredOn": "2026-08-31",
+   "name": "江子言",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 5,
+   "registeredOn": "2026-09-02",
+   "name": "沈清山",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 5,
+   "registeredOn": "2026-09-02",
+   "name": "陳福山",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 5,
+   "registeredOn": "2026-09-02",
+   "name": "黃建勇",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-08-31",
+   "name": "陳漢鍾",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-02",
+   "name": "呂惠卿",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-02",
+   "name": "李中",
+   "fullName": null,
+   "party": "勞動黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-02",
+   "name": "薛呈懿",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-02",
+   "name": "謝家倫",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-03",
+   "name": "林宜弘",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-03",
+   "name": "王乾明",
+   "fullName": null,
+   "party": "台灣民眾黨"
+  },
+  {
+   "district": 6,
+   "registeredOn": "2026-09-03",
+   "name": "黃琤婷",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 7,
+   "registeredOn": "2026-09-01",
+   "name": "林義剛",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 7,
+   "registeredOn": "2026-09-01",
+   "name": "黃子堯",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 7,
+   "registeredOn": "2026-09-02",
+   "name": "沈信雄",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 7,
+   "registeredOn": "2026-09-03",
+   "name": "張明華",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 8,
+   "registeredOn": "2026-09-02",
+   "name": "楊弘旻",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 8,
+   "registeredOn": "2026-09-02",
+   "name": "邱素梅",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 8,
+   "registeredOn": "2026-09-03",
+   "name": "林佩螢",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 8,
+   "registeredOn": "2026-09-04",
+   "name": "林峻輔",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 9,
+   "registeredOn": "2026-08-31",
+   "name": "黃賢能",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 9,
+   "registeredOn": "2026-09-02",
+   "name": "曾茂照",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 9,
+   "registeredOn": "2026-09-02",
+   "name": "江信賢",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 9,
+   "registeredOn": "2026-09-02",
+   "name": "游雅絢",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 9,
+   "registeredOn": "2026-09-03",
+   "name": "郭嘉呈",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 10,
+   "registeredOn": "2026-09-01",
+   "name": "黃士駿",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 10,
+   "registeredOn": "2026-09-02",
+   "name": "李明哲",
+   "fullName": null,
+   "party": "民主進步黨"
+  },
+  {
+   "district": 10,
+   "registeredOn": "2026-09-03",
+   "name": "陳玉萍",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 11,
+   "registeredOn": "2026-09-01",
+   "name": "孫湯玉惠",
+   "fullName": "孫湯玉惠 aly saku",
+   "party": null
+  },
+  {
+   "district": 12,
+   "registeredOn": "2026-09-02",
+   "name": "沈志弘",
+   "fullName": null,
+   "party": "中國國民黨"
+  },
+  {
+   "district": 12,
+   "registeredOn": "2026-09-03",
+   "name": "陳傑麟",
+   "fullName": null,
+   "party": "親民黨"
+  },
+  {
+   "district": 13,
+   "registeredOn": "2026-09-02",
+   "name": "曹天民",
+   "fullName": null,
+   "party": null
+  },
+  {
+   "district": 13,
+   "registeredOn": "2026-09-03",
+   "name": "李勝雄",
+   "fullName": "李勝雄 中國國民黨 花蓮縣第1選舉區 115/08/31 許願神 無 花蓮縣第1選舉區 115/08/31 陳財能 無 花蓮縣第1選舉區 115/09/02 謝國榮 無 花蓮縣第1選舉區 115/09/02 徐子芳 中國國民黨 花蓮縣第1選舉區 115/09/02 黃達祥 中國國民黨 花蓮縣第1選舉區 115/09/02 江躍辰 無 花蓮縣第1選舉區 115/09/02 林宗昆 中國國民黨 花蓮縣第1選舉區 115/09/02 洪士閔 無 花蓮縣第1選舉區 115/09/02 田珍綺 民主進步黨 花蓮縣第1選舉區 115/09/03 謝豪杰 無 花蓮縣第1選舉區 115/09/03 莊依婕 民主進步黨 花蓮縣第1選舉區 115/09/03 傅國淵 無 花蓮縣第1選舉區 115/09/03 胡仁順 民主進步黨 花蓮縣第1選舉區 115/09/04 韓林梅 中國國民黨 花蓮縣第1選舉區 115/09/04 蔡翼陽 台灣民眾黨 花蓮縣第2選舉區 115/09/02 張美華",
+   "party": "中國國民黨"
+  }
+ ]
+}

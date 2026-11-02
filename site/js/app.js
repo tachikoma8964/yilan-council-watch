@@ -141,6 +141,9 @@
           h("h2", { id: "dist-title" }, "第 " + d.n + " 選區"),
           h("p", { class: "sub" }, d.area + "，" + d.seats + " 席"),
           h("div", { class: "block" }, sect("議員（" + ms.length + " 位）"), h("ul", { class: "rows" }, ms.map(memberRow))),
+          h("div", { class: "block" }, sect("第 " + data.candidates.term + " 屆參選人（" + candidatesOf(d.n).length + " 位）"),
+            h("ul", { class: "rows" }, candidatesOf(d.n).map(candidateRow)),
+            h("a", { class: "more", href: "#/candidates" }, "全部參選人，" + data.candidates.vote + " 投票")),
           h("div", { class: "block" }, sect("最新提案"),
             billList(latest.slice(0, 3)),
             h("a", { class: "more", href: "#/bills?d=" + d.n }, "此選區全部 " + latest.length + " 件"))))
@@ -186,6 +189,37 @@
     ];
   }
 
+  var NEWCOMER = "還不是議員，所以沒有提案與連署紀錄。";
+  function candidateRow(c) {
+    var m = c.status === "member" ? member(c.id) : null;
+    var name = c.status === "member" ? h("a", { href: "#/m/" + c.id }, c.name)
+      : c.status === "former" ? h("a", { href: "#/o/" + encodeURIComponent(c.name) }, c.name) : c.name;
+    var count = c.status === "new" ? h("span", { class: "count" }, "新人 ", h("span", null, "尚未提案、連署"))
+      : h("span", { class: "count" }, c.proposed + " ", h("span", null, "件提案"));
+    var note = c.status === "member" ? "現任議員，第 " + data.term + " 屆連署 " + c.cosigned + " 件"
+      : c.status === "former" ? "本屆曾提案，不在現任名單" : null;
+    return h("li", { class: "person" },
+      m ? face(m, "s") : h("span", { class: "face none face-s", "aria-hidden": "true" }, c.name.charAt(0)),
+      h("span", { class: "name" }, name, c.fullName ? h("span", { class: "alias" }, c.fullName.slice(c.name.length)) : null),
+      count,
+      h("span", { class: "meta" }, c.party ? partyChip(c) : h("span", null, "無黨籍登記"), note ? h("span", null, note) : null));
+  }
+  function candidatesOf(n) { return data.candidates.rows.filter(function (c) { return c.district === n; }); }
+  function viewCandidates() {
+    var cd = data.candidates;
+    return [
+      head("參選人", "第 " + cd.term + " 屆縣議員選舉，" + cd.vote + " 投票。這是向選委會登記的名單，共 " + cd.rows.length + " 人，依選區排列，不做排名。" + "正式候選人名單與號次，選委會預定 " + cd.announce + " 公告。"),
+      h("p", { class: "sub" }, "新人指第 " + data.term + " 屆不是議員的人，" + NEWCOMER),
+      data.districts.map(function (d) {
+        var list = candidatesOf(d.n);
+        return h("div", { class: "block" },
+          sect("第 " + d.n + " 選區（" + d.area + "，" + d.seats + " 席）", 2),
+          list.length ? h("ul", { class: "rows" }, list.map(candidateRow)) : h("p", { class: "sub" }, "登記名冊沒有這個選區的人。"));
+      }),
+      h("p", { class: "block sub" }, "來源：", h("a", { href: cd.source, rel: "noopener", target: "_blank" }, "中選會候選人登記名冊"), "，製表 " + cd.listDate + "。")
+    ];
+  }
+
   function viewSessions() {
     return [
       head("會期", "只列有議員提案的會期。日期是議案登錄日，不是開會日；正式日程看議會官網。"),
@@ -213,7 +247,8 @@
         h("div", null,
           m.party ? h("p", null, partyChip(m)) : null,
           h("p", null, "第 " + data.term + " 屆提案 " + m.proposed + " 件，連署 " + m.cosigned + " 件。"),
-          h("p", { class: "sub" }, SCOPE))),
+          h("p", { class: "sub" }, SCOPE),
+          data.candidates.rows.some(function (c) { return c.id === m.id; }) ? h("p", null, "已登記參選第 " + data.candidates.term + " 屆（", h("a", { href: "#/candidates" }, "參選人名單"), "）。") : null)),
       assetsBlock(m),
       h("div", { class: "block" }, sect("提案類別", 2),
         cats.length ? h("ul", { class: "bars" }, cats.map(function (c) {
@@ -292,6 +327,7 @@
           h("li", null, "議員照片：", h("a", { href: "https://bulletin.cec.gov.tw/", rel: "noopener" }, data.photoCredit), "。是 111 年參選時刊登的照片。"),
           h("li", null, "黃雯如 2024 年補選才就任，不在 111 年公報裡，照片取自", h("a", { href: "https://www.ilcc.gov.tw/Html/H_05/H_05.asp", rel: "noopener" }, "議會官網"), "。"),
           h("li", null, "財產申報：", h("a", { href: data.assetSource, rel: "noopener" }, "監察院公職人員財產申報查詢"), "，取每位議員最新一份一般申報。股票欄是票面價額，不是股價；金額含配偶與未成年子女。"),
+          h("li", null, "參選人：", h("a", { href: data.candidates.source, rel: "noopener" }, "中選會 115 年候選人登記名冊"), "。是登記名單，不是正式候選人名單；號次與正式名單等選委會 " + data.candidates.announce + " 公告後更新。"),
           h("li", null, "資料擷取日：" + data.retrieved + "。")),
         h("h2", null, "目前沒有的"),
         h("ul", null,
@@ -315,7 +351,7 @@
   function viewMissing() { return [head("找不到這個頁面"), h("p", null, h("a", { href: "#/" }, "回到選區"))]; }
 
   /* ---- router ---- */
-  var TITLES = { home: "選區", members: "議員", bills: "議案", sessions: "會期", about: "關於" };
+  var TITLES = { home: "選區", members: "議員", bills: "議案", sessions: "會期", candidates: "參選人", about: "關於" };
   function route() {
     if (!data) return;
     var hash = location.hash.replace(/^#/, "") || "/";
@@ -329,6 +365,7 @@
     else if (path[0] === "m") { key = "members"; view = viewMember(path[1]); }
     else if (path[0] === "o") { key = "members"; view = viewOutsider(decodeURIComponent(path[1] || "")); }
     else if (path[0] === "sessions") { key = "sessions"; view = viewSessions(); }
+    else if (path[0] === "candidates") { key = "candidates"; view = viewCandidates(); }
     else if (path[0] === "bills") { key = "bills"; view = viewBills(q); }
     else if (path[0] === "about") { key = "about"; view = viewAbout(); }
     else view = viewMissing();

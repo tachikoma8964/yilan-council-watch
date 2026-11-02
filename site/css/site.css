@@ -169,6 +169,7 @@ main { min-height: 100vh; padding-block: var(--s6) var(--s7); }
 /* 清單列 */
 .rows > li { position: relative; display: grid; grid-template-columns: 1fr auto; column-gap: var(--s4); padding: var(--s3) 0; border-bottom: var(--rule) solid var(--line); }
 .rows .name { font-weight: 700; }
+.rows .alias { margin-left: var(--s2); color: var(--muted); font-weight: 400; font-size: var(--text-s); }
 .rows .name a::after { content: ""; position: absolute; inset: 0; }
 .rows > li:has(.name a:hover) { background: var(--tint); padding-inline: var(--s2); margin-inline: calc(-1 * var(--s2)); }
 .bill .meta a, .foot a { display: inline-block; padding-block: var(--s2); margin-block: calc(-1 * var(--s2)); }
